@@ -32,7 +32,7 @@ In this repository you will need to create content in this repository from the f
 - [X] [Maps - Simple HTML Map Example](https://followthepowells.github.io/pl1/services/simplemap.html)
 - [X] [Routes - Directions API - URL request JSON response](https://followthepowells.github.io/pl1/services/mydirections.md)
 - [X] [Modify Dynamic Map Clustering example to show Ontario Parks](https://followthepowells.github.io/pl1/clustering/ontarioparks.html)
-- [ ] Create your Story using Google Dynamic Maps (JavaScript) in the provided folder(https://followthepowells.github.io/pl1/story/MyStoryMap.html)
+- [ ] [Create your Story using Google Dynamic Maps (JavaScript) in the provided folder](https://followthepowells.github.io/pl1/story/MyStoryMap.html)
 
 > Optional Tip: You can check the above boxes by editing this MarkDown document and adding an `x` between the `[ ]`, like this: `[x]`
 
