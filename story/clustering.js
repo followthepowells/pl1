@@ -53,9 +53,4 @@ function initMap() {
     { lat: 46.0668, lng: -79.4559},
     { lat: 46.18907, lng: -84.04116}
   ];
-  © 2022 GitHub, Inc.
-  Terms
-  Privacy
-  Security
-  Status
   
