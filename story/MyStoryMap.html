@@ -1,45 +1,35 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Rouge River Trails</title>
+    <!--Adapted from https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-html-->
+  <head>
+    <title>Marker Clustering</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>   
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap"
+      defer>
+    </script>
+    <script src="clustering.js"></script>
     <style>
         /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
-          #map {
-            height: 100%;
-          }
-  
-          /* Optional: Makes the sample page fill the window. */
-          html,
-          body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
-      </style>
-
-    <script>
-        let map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 16, 
-                center: { lat: 43.863, lng: -79.269},                
-            });
-
-            map.data.loadGeoJson("https://maps.googleapis.com/maps/api/directions/json?origin=place_id:ChIJB9XCu8_X1IkR2zQ402NoWoE&destination=place_id:ChIJV1IWONnX1IkRCWEjQQY0rgY&waypoints=place_id:ChIJVbdTwEPW1IkRv9EvOhWT0wY%7Cplace_id:ChIJ3biaF37X1IkR7R_zJhVrQzI&mode=walking&transit_routing_preference=less_walking&units=metric&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE");        
+       * element that contains the map. */
+        #map {
+        height: 100%;
         }
-    </script>
 
-</head>
-<body>
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+    </style>
+
+  </head>
+  <body>
     <div id="map"></div>
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script>
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly"
-        async        
-    </script>
-</body>
+
+  </body>
 </html>
+
